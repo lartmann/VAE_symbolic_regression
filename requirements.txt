@@ -1,0 +1,14 @@
+numpy
+torch
+pandas
+equation_tree
+sympy
+matplotlib
+seaborn
+scipy
+scikit-learn
+plotly
+ipykernel
+colour
+nbformat==4.2.0
+pyro-ppl

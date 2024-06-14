@@ -315,7 +315,7 @@ def get_interpolated_df(
     z_list = np.array(z_list)
     if len(z_list.shape) == 3:
         z_list = z_list.squeeze(1)
-    if kind == 'regression':
+    if kind == 'AE' or kind == 'VAE':
         z_decoded_list, z_decoded_constants = decode_latent(model, equation_tree_dataset, z_list)
     else:
         z_decoded_list, z_decoded_constants = decode_latent_classify(model, equation_tree_dataset, z_list, classes)
